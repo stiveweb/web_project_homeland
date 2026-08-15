@@ -25,3 +25,40 @@
   width: 100%;
   height: auto;
 }
+
+/* MEDIA QUERIES  */
+
+@media screen and (max-width: 1024px) {
+  .lead {
+    margin-top: 90px;
+  }
+
+  .lead__title,
+  .lead__subtitle {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .lead {
+    margin-top: 50px;
+  }
+
+  .lead__title {
+    max-width: 288px;
+    margin-bottom: 16px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .lead__subtitle {
+    max-width: 288px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .lead__image {
+    width: 100%;
+  }
+}
