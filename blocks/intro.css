@@ -1,5 +1,5 @@
 .intro {
-  width: 830px;
+  max-width: 830px;
   margin-top: 92px;
   margin-right: 0;
   margin-left: 0;
@@ -51,10 +51,8 @@
     width: calc(100% - 32px);
     max-width: 288px;
     margin: 64px auto 0;
-    width: calc(100% - 32px);
-    max-width: 288px;
-    margin: 64px auto 0;
   }
+
   .intro__title {
     margin-bottom: 40px;
     font-size: 32px;
