@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta name="author" content="Pedro Esteves" />
     <meta
       name="description"
@@ -12,7 +13,9 @@
       name="keywords"
       content="TripleTen, De Pátria para Pátria, HTML, CSS, responsividade, BEM"
     />
+
     <title>De Pátria para Pátria</title>
+
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
 
@@ -26,52 +29,49 @@
         />
       </header>
 
-      <!-- conteudo-->
+      <main>
+        <div class="content">
+          <section class="lead">
+            <h1 class="lead__title">De Pátria para Pátria</h1>
 
-      <main class="content">
-        <section class="lead">
-          <h1 class="lead__title">De Pátria para Pátria</h1>
+            <p class="lead__subtitle">
+              Uma jornada épica do Kentucky ao Burundi pelo País de Gales e
+              Ucrânia
+            </p>
 
-          <p class="lead__subtitle">
-            Uma jornada épica do Kentucky ao Burundi pelo País de Gales e
-            Ucrânia
-          </p>
+            <img
+              class="lead__image"
+              src="./images/__image.jpg"
+              alt="Uma cidade vista de cima"
+            />
+          </section>
 
-          <img
-            class="lead__image"
-            src="./images/__image.jpg"
-            alt="Uma cidade vista de cima"
-          />
-        </section>
+          <section class="intro">
+            <h2 class="intro__title">
+              Conheça um pouco mais sobre a localização dos seus amigos
+            </h2>
 
-        <!--intro-->
+            <p class="intro__quote">
+              Cada pessoa é um artista livre, chamado a transformar as
+              condições, pensamentos e estruturas que moldam nossas vidas.
+            </p>
 
-        <section class="intro">
-          <h2 class="intro__title">
-            Conheça um pouco mais sobre a localização dos seus amigos
-          </h2>
+            <p class="intro__author">— Joseph Beuys</p>
 
-          <p class="intro__quote">
-            Cada pessoa é um artista livre, chamado a transformar as condições,
-            pensamentos e estruturas que moldam nossas vidas.
-          </p>
+            <p class="intro__text">
+              A cidade de TripleTen reuniu profissionais de diversos cantos do
+              mundo. Hoje, a Galeria de Arte TripleTen tem o orgulho de
+              apresentar histórias e fotos de algumas das pessoas que dedicam
+              seu tempo e esforço para fazer com que os futuros profissionais de
+              tecnologia desta cidade se sintam em casa. Cada um de nós tem uma
+              história única sobre o lugar de onde viemos. Sinta-se à vontade
+              para adicionar sua própria história e uma obra de arte visual
+              dedicada à sua cidade natal à nossa coleção. Não importa de onde
+              você é, estamos felizes por você ser nosso vizinho.
+            </p>
+          </section>
+        </div>
 
-          <p class="intro__author">— Joseph Beuys</p>
-
-          <p class="intro__text">
-            A cidade de TripleTen reuniu profissionais de diversos cantos do
-            mundo. Hoje, a Galeria de Arte TripleTen tem o orgulho de apresentar
-            histórias e fotos de algumas das pessoas que dedicam seu tempo e
-            esforço para fazer com que os futuros profissionais de tecnologia
-            desta cidade se sintam em casa. Cada um de nós tem uma história
-            única sobre o lugar de onde viemos. Sinta-se à vontade para
-            adicionar sua própria história e uma obra de arte visual dedicada à
-            sua cidade natal à nossa coleção. Não importa de onde você é,
-            estamos felizes por você ser nosso vizinho.
-          </p>
-        </section>
-
-        <!--grid-->
         <section class="photo-grid">
           <img class="photo-grid__image" src="./images/img1.png" alt="" />
           <img class="photo-grid__image" src="./images/img2.png" alt="" />
@@ -82,26 +82,32 @@
           <img class="photo-grid__image" src="./images/img7.png" alt="" />
           <img class="photo-grid__image" src="./images/img8.png" alt="" />
         </section>
-
-        <!-- places -->
-
         <section class="places">
+          <!-- Criccieth -->
+
           <article class="place">
             <h2 class="place__title">Criccieth, País de Gales</h2>
 
             <div class="place__website">
               <p class="place__url-heading">ARTISTAS</p>
+
               <p class="place__artist">
                 Steffan Warren, editor-chefe<br />
                 Kseniya Glagoleva, gerente de projeto
               </p>
             </div>
 
-            <img
-              class="place__image"
-              src="./images/__image1.png"
-              alt="Vista de Criccieth, País de Gales"
-            />
+            <div class="place__media">
+              <img
+                class="place__image"
+                src="./images/__image1.png"
+                alt="Vista de Criccieth, País de Gales"
+              />
+
+              <button class="place__button" type="button">
+                Compre esta obra de arte como NFT
+              </button>
+            </div>
 
             <div class="place__text">
               <p class="place__paragraph">
@@ -124,25 +130,30 @@
                 primeiro-ministro do Reino Unido.
               </p>
             </div>
-
-            <button class="place__button" type="button">
-              Compre esta obra de arte como NFT
-            </button>
           </article>
+
+          <!-- Berea -->
 
           <article class="place">
             <h2 class="place__title">Berea, EUA</h2>
 
             <div class="place__website">
-              <p class="place__url">ARTISTAS</p>
+              <p class="place__url-heading">ARTISTAS</p>
+
               <p class="place__artist">Travis Turner, autor e editor</p>
             </div>
 
-            <img
-              class="place__image"
-              src="./images/__image2.png"
-              alt="Vista de Berea, EUA"
-            />
+            <div class="place__media">
+              <img
+                class="place__image"
+                src="./images/__image2.png"
+                alt="Vista de Berea, EUA"
+              />
+
+              <button class="place__button" type="button">
+                Compre esta obra de arte como NFT
+              </button>
+            </div>
 
             <div class="place__text">
               <p class="place__paragraph">
@@ -164,10 +175,102 @@
                 aluno recebe uma bolsa de estudos integral.
               </p>
             </div>
+          </article>
 
-            <button class="place__button" type="button">
-              Compre esta obra de arte como NFT
-            </button>
+          <!-- Muramvya -->
+
+          <article class="place">
+            <h2 class="place__title">Muramvya, Burundi</h2>
+
+            <div class="place__website">
+              <p class="place__url-heading">ARTISTA</p>
+
+              <p class="place__artist">Grevisse Kenguruka, editor técnico</p>
+            </div>
+
+            <div class="place__media">
+              <img
+                class="place__image"
+                src="./images/__image3.png"
+                alt="Vista de Muramvya, Burundi"
+              />
+
+              <button class="place__button" type="button">
+                Compre esta obra de arte como NFT
+              </button>
+            </div>
+
+            <div class="place__text">
+              <p class="place__paragraph">
+                Muramvya é uma das 18 províncias de Burundi. Na era do reino,
+                Muramvya era a capital real e em 2007, por causa de sua paisagem
+                cultural e natural, foi adicionada à Lista Provisória do
+                Patrimônio Mundial da UNESCO. Está localizada no centro de
+                Burundi, entre as capitais políticas e econômicas do país.
+              </p>
+
+              <p class="place__paragraph">
+                O clima é bastante frio à noite, mas durante o dia, você
+                pensaria que está no céu. A 2.665 metros (8.743 pés) acima do
+                nível do mar, o Monte Teza é um dos lugares mais frios do país.
+                Mas essa brisa fresca permite uma das maiores plantações de chá
+                e café do país, que representam a maior parte das exportações do
+                Burundi.
+              </p>
+
+              <p class="place__paragraph">
+                O Parque Nacional de Kibira, uma das maiores reservas de vida
+                selvagem para macacos, se sobrepõe a quatro províncias,
+                incluindo Muramvya. Este Parque Nacional encontra-se no ápice
+                das belas montanhas do Congo-Nile Divide, variando entre 1.550 e
+                2.660 metros de altitude. Está repleta de uma bela vegetação e
+                fonte para os vários rios e riachos que fornecem água em todo o
+                país.
+              </p>
+            </div>
+          </article>
+
+          <!-- Goiânia -->
+
+          <article class="place">
+            <h2 class="place__title">Goiânia, Goiás</h2>
+
+            <div class="place__website">
+              <p class="place__url-heading">ARTISTA</p>
+
+              <p class="place__artist">Pedro Esteves, Desenvolvedor Web</p>
+            </div>
+
+            <div class="place__media">
+              <img
+                class="place__image"
+                src="./images/__image4.png"
+                alt="Vista de Goiânia, Goiás"
+              />
+
+              <button class="place__button" type="button">
+                Compre esta obra de arte como NFT
+              </button>
+            </div>
+
+            <div class="place__text">
+              <p class="place__paragraph">
+                Goiânia, capital de Goiás, é uma cidade conhecida por suas áreas
+                verdes, seus parques e pela arquitetura em estilo Art Déco
+                presente em diferentes pontos da cidade. Planejada e fundada na
+                década de 1930, Goiânia cresceu rapidamente e se tornou um dos
+                principais centros urbanos do Centro-Oeste brasileiro.
+              </p>
+
+              <p class="place__paragraph">
+                Cercada pelo bioma do Cerrado, a cidade combina vida urbana com
+                espaços naturais que fazem parte do cotidiano de seus moradores.
+                Entre praças, parques, feiras e uma gastronomia marcada pelos
+                sabores de Goiás, Goiânia tem uma identidade própria e um ritmo
+                que mistura a modernidade de uma grande cidade com as tradições
+                do interior.
+              </p>
+            </div>
           </article>
         </section>
       </main>
