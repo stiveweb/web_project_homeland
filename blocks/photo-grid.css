@@ -12,9 +12,8 @@
   width: 100%;
 }
 
-/* midea query */
-
-@media screen and (max-width: 768px) {
+/* Tablet */
+@media screen and (max-width: 1024px) {
   .photo-grid {
     width: calc(100% - 48px);
     max-width: 720px;
@@ -32,10 +31,10 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+/* Celular */
+@media screen and (max-width: 544px) {
   .photo-grid {
     width: calc(100% - 32px);
-    max-width: 288px;
     margin: 64px auto 0;
 
     display: grid;
